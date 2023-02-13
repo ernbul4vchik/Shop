@@ -117,6 +117,9 @@ body {
 	color: #FFFFFF;
 }
 
+.product {
+	margin-bottom: 95px;
+}
 .product-title {
 	font-weight: 400;
 	font-size: 30px;
@@ -189,4 +192,10 @@ body {
 	display: block;
 	padding: 15px 40px;
 	border: 1px #F26376 solid;
+}
+
+.feedback {
+	width: 100%;
+	background-image: url('../source/images/bgc_feedback.jpg');
+	height: 448px;
 }
