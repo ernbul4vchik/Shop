@@ -1,12 +1,17 @@
-body {
+html , body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
 }
 .wrap {
 	width: 1140px;
 	margin: 0px auto;
+}
+.main {
+	height: 100%;
 }
 .header {
 	background: #222222;
@@ -134,7 +139,9 @@ body {
 	color: #9F9F9F;
 	text-align: center;
 }
-
+.product-base {
+	margin-bottom: 48px;
+}
 .product-box {
 	display: flex;
 	flex-wrap: wrap;
@@ -197,5 +204,106 @@ body {
 .feedback {
 	width: 100%;
 	background-image: url('../source/images/bgc_feedback.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	height: 448px;
+}
+
+.feedback-box {
+	display: flex;
+	justify-content: space-between;
+	padding: 97px 0px 127px 0px;
+}
+
+.feedback-user {
+	display: flex;
+	flex-direction: column;
+}
+.feedback-user__avatar {
+	align-self: center;
+}
+
+.feedback-user__text {
+	margin-top: 30px;
+	width: 362px;
+	text-align: center;
+}
+.feedback-subscribe {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.feedback-subscribe__title {
+	font-size: 24px;
+	line-height: 167.2%;
+	text-align: center;
+	color: #222224;
+}
+.feedback-subscribe__subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 167.2%;
+	text-align: center;
+	color: #222224;
+}
+
+.feebback-subscribe__field {
+	border: none;
+	padding: 15px 22px;
+	background: #E1E1E1;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.feebback-subscribe__btn {
+	padding: 15px 22px;
+	border: none;
+	background-color: #F16D7F;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	margin-left: -5px;
+}
+
+.footer {
+	background: #222224;
+	padding: 30px;
+}
+.footer-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FBFBFB;
+}
+.footer-socials {
+	list-style-type: none;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+}
+
+.footer-socials__link {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #E1E1E1;
+	padding: 8px 9px;
+}
+.footer-socials__link:hover {
+	background: #F16D7F;
+}
+.footer-socials__link:hover .footer-svg {
+	fill: #E1E1E1;
+}
+.footer-svg {
+	fill: #F16D7F;
 }
