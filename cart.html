@@ -60,7 +60,70 @@
 			</nav>
 		</div>
 	</header>
+	<section class="cart-promo">
+		<div class="wrap">
+			<h2 class="cart-promo__title">SHOPPING CART</h2>
+		</div>
+	</section>
 	<main class="main">
+		<section class="cart">
+			<div class="wrap cart-wrap">
+				<div class="cart-card">
+					<div class="cart-block">
+						<div class="cart-avatar">
+							<img src="source/images/male_sweatshirt.jpg" alt="cart_avatar" class="cart-avatar__image">
+						</div>
+						<div class="cart-info">
+							<h3 class="cart-info__title">{text_js}</h3>
+							<div class="cart-info__box">
+								<p class="cart-info__text">Price: <span class="cart-info__text-pink">$ {value_js}</span></p>
+								<p class="cart-info__text">Color: {text_js}</p>
+								<p class="cart-info__text">Size: {text_js}</p>
+								<button class="cart-info__btn">X</button>
+							</div>
+						</div>
+					</div>
+					<div class="cart-block">
+						<div class="cart-avatar">
+							<img src="source/images/female_jacket.jpg" alt="cart_avatar" class="cart-avatar__image">
+						</div>
+						<div class="cart-info">
+							<h3 class="cart-info__title">{text_js}</h3>
+							<div class="cart-info__box">
+								<p class="cart-info__text">Price: <span class="cart-info__text-pink">$ {value_js}</span></p>
+								<p class="cart-info__text">Color: {text_js}</p>
+								<p class="cart-info__text">Size: {text_js}</p>
+								<button class="cart-info__btn">X</button>
+							</div>
+						</div>
+					</div>
+					<div class="cart-card__shop">
+						<button class="cart-card__shop-btn project-btn__style">CLEAR SHOPPING CART</button><button
+							class="cart-card__shop-btn project-btn__style">CONTINUE SHOPPING</button>
+					</div>
+				</div>
+				<div class="cart-payment">
+					<h3 class="cart-payment__title">SHIPPING ADRESS</h3>
+					<form action="#" class="cart-payment__form">
+						<input type="text" class="cart-payment__form-input silver__style" placeholder="Bangladesh">
+						<input type="text" class="cart-payment__form-input" placeholder="State">
+						<input type="text" class="cart-payment__form-input" placeholder="Postcode / Zip">
+						<a href="#" class="cart-payment__form-btn project-btn__style">GET A QUOTE</a>
+
+					</form>
+					<div class="cart-payment__box">
+						<div class="cart-payment__box-sum">
+							<p class="cart-payment__box-sub">SUB TOTAL: {}</p>
+							<p class="cart-payment__box-grand">GRAND TOTAL: <span class="cart-info__text-pink">{}</span></p>
+						</div>
+						<hr>
+						<div class="cart-payment__box-checkout">
+							<button class="cart-payment__box-btn">PROCEED TO CHECKOUT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="feedback">
 			<div class="wrap">
 				<div class="feedback-box">
