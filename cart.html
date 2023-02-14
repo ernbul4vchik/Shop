@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shop</title>
+	<title>Cart</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -60,125 +60,67 @@
 			</nav>
 		</div>
 	</header>
-	<section class="promo">
-		<div class="wrap promo-wrap">
-			<h1 class="promo-title">
-				<span class="promo-title__bold">THE BRAND</span> <br>
-				OF LUXERIOUS <span class="promo-title__pink">FASHION</span>
-			</h1>
-		</div>
-	</section>
-	<section class="categories">
+	<section class="cart-promo">
 		<div class="wrap">
-			<ul class="categories-list">
-				<li class="categories-list__item">
-					<p class="categories-list__title">
-						30% OFF <br>
-						FOR WOMEN
-					</p>
-				</li>
-				<li class="categories-list__item">
-					<p class="categories-list__title">
-						HOT DEAL <br>
-						FOR MEN
-					</p>
-				</li>
-				<li class="categories-list__item">
-					<p class="categories-list__title">
-						NEW ARRIVALS <br>
-						FOR MEN
-					</p>
-				</li>
-				<li class="categories-list__item">
-					<p class="categories-list__title">
-						LUXIROUS & TRENDY <br>
-						ACCESORIES
-					</p>
-				</li>
-			</ul>
+			<h2 class="cart-promo__title">SHOPPING CART</h2>
 		</div>
 	</section>
 	<main class="main">
-		<section class="product">
-			<div class="wrap">
-				<div class="product-base">
-					<h2 class="product-title">
-						Fetured Items
-					</h2>
-					<p class="product-info">
-						Shop for items based on what we featured in this week
-					</p>
+		<section class="cart">
+			<div class="wrap cart-wrap">
+				<div class="cart-card">
+					<div class="cart-block">
+						<div class="cart-avatar">
+							<img src="source/images/male_sweatshirt.jpg" alt="cart_avatar" class="cart-avatar__image">
+						</div>
+						<div class="cart-info">
+							<h3 class="cart-info__title">{text_js}</h3>
+							<div class="cart-info__box">
+								<p class="cart-info__text">Price: <span class="cart-info__text-pink">$ {value_js}</span></p>
+								<p class="cart-info__text">Color: {text_js}</p>
+								<p class="cart-info__text">Size: {text_js}</p>
+								<button class="cart-info__btn">X</button>
+							</div>
+						</div>
+					</div>
+					<div class="cart-block">
+						<div class="cart-avatar">
+							<img src="source/images/female_jacket.jpg" alt="cart_avatar" class="cart-avatar__image">
+						</div>
+						<div class="cart-info">
+							<h3 class="cart-info__title">{text_js}</h3>
+							<div class="cart-info__box">
+								<p class="cart-info__text">Price: <span class="cart-info__text-pink">$ {value_js}</span></p>
+								<p class="cart-info__text">Color: {text_js}</p>
+								<p class="cart-info__text">Size: {text_js}</p>
+								<button class="cart-info__btn">X</button>
+							</div>
+						</div>
+					</div>
+					<div class="cart-card__shop">
+						<button class="cart-card__shop-btn project-btn__style">CLEAR SHOPPING CART</button><button
+							class="cart-card__shop-btn project-btn__style">CONTINUE SHOPPING</button>
+					</div>
 				</div>
-				<ul class="product-box">
-					<li class="product-card">
-						<div class="product-preview">
-							<img src="source/images/male_jacket.jpg" alt="jacket" class="product-image">
+				<div class="cart-payment">
+					<h3 class="cart-payment__title">SHIPPING ADRESS</h3>
+					<form action="#" class="cart-payment__form">
+						<input type="text" class="cart-payment__form-input silver__style" placeholder="Bangladesh">
+						<input type="text" class="cart-payment__form-input" placeholder="State">
+						<input type="text" class="cart-payment__form-input" placeholder="Postcode / Zip">
+						<a href="#" class="cart-payment__form-btn project-btn__style">GET A QUOTE</a>
+
+					</form>
+					<div class="cart-payment__box">
+						<div class="cart-payment__box-sum">
+							<p class="cart-payment__box-sub">SUB TOTAL: {}</p>
+							<p class="cart-payment__box-grand">GRAND TOTAL: <span class="cart-info__text-pink">{}</span></p>
 						</div>
-						<div class="product-card__info">
-							<h3 class="product-name">ELLERY X M'O CAPSULE</h3>
-							<p class="product-describe">Known for her sculptural takes on traditional tailoring, Australian
-								arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-							<a href="#" class="product-price">$52.00 / 48.00 €</a>
+						<hr>
+						<div class="cart-payment__box-checkout">
+							<button class="cart-payment__box-btn">PROCEED TO CHECKOUT</button>
 						</div>
-					</li>
-					<li class="product-card">
-						<div class="product-preview">
-							<img src="source/images/female_jacket.jpg" alt="jacket" class="product-image">
-						</div>
-						<div class="product-card__info">
-							<h3 class="product-name">ELLERY X M'O CAPSULE</h3>
-							<p class="product-describe">Known for her sculptural takes on traditional tailoring, Australian
-								arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-							<a href="#" class="product-price">$52.00 / 48.00 €</a>
-						</div>
-					</li>
-					<li class="product-card">
-						<div class="product-preview">
-							<img src="source/images/female_shirt.jpg" alt="jacket" class="product-image">
-						</div>
-						<div class="product-card__info">
-							<h3 class="product-name">ELLERY X M'O CAPSULE</h3>
-							<p class="product-describe">Known for her sculptural takes on traditional tailoring, Australian
-								arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-							<a href="#" class="product-price">$52.00 / 48.00 €</a>
-						</div>
-					</li>
-					<li class="product-card">
-						<div class="product-preview">
-							<img src="source/images/male_sweatshirt.jpg" alt="jacket" class="product-image">
-						</div>
-						<div class="product-card__info">
-							<h3 class="product-name">ELLERY X M'O CAPSULE</h3>
-							<p class="product-describe">Known for her sculptural takes on traditional tailoring, Australian
-								arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-							<a href="#" class="product-price">$52.00 / 48.00 €</a>
-						</div>
-					</li>
-					<li class="product-card">
-						<div class="product-preview">
-							<img src="source/images/male_tshirt.jpg" alt="jacket" class="product-image">
-						</div>
-						<div class="product-card__info">
-							<h3 class="product-name">ELLERY X M'O CAPSULE</h3>
-							<p class="product-describe">Known for her sculptural takes on traditional tailoring, Australian
-								arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-							<a href="#" class="product-price">$52.00 / 48.00 €</a>
-						</div>
-					</li>
-					<li class="product-card">
-						<div class="product-preview">
-							<img src="source/images/women_suit.jpg" alt="jacket" class="product-image">
-						</div>
-						<div class="product-card__info">
-							<h3 class="product-name">ELLERY X M'O CAPSULE</h3>
-							<p class="product-describe">Known for her sculptural takes on traditional tailoring, Australian
-								arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-							<a href="#" class="product-price">$52.00 / 48.00 €</a>
-						</div>
-					</li>
-				</ul>
-				<div class="product-browse">
-					<a href="#" class="product-button project-btn__style">Browse All product</a>
+					</div>
 				</div>
 			</div>
 		</section>
