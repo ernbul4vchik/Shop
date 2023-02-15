@@ -1,0 +1,69 @@
+.feedback {
+	width: 100%;
+	background-image: url("../source/images/bgc_feedback.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 448px;
+}
+
+.feedback-box {
+	display: flex;
+	justify-content: space-between;
+	padding: 97px 0px 127px 0px;
+}
+
+.feedback-user {
+	display: flex;
+	flex-direction: column;
+}
+.feedback-user__avatar {
+	align-self: center;
+}
+
+.feedback-user__text {
+	margin-top: 30px;
+	width: 362px;
+	text-align: center;
+}
+.feedback-subscribe {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.feedback-subscribe__title {
+	font-size: 24px;
+	line-height: 167.2%;
+	text-align: center;
+	color: #222224;
+}
+.feedback-subscribe__subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 167.2%;
+	text-align: center;
+	color: #222224;
+}
+.feedback-subscribe__form {
+	margin-top: 32px;
+}
+.feebback-subscribe__field {
+	border: none;
+	padding: 15px 22px;
+	background: #e1e1e1;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	cursor: text;
+}
+.feebback-subscribe__btn {
+	@include nule-btn(none, none, pointer);
+	padding: 15px 22px;
+	background-color: #f16d7f;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-size: 14px;
+	line-height: 17px;
+	color: #ffffff;
+	margin-left: -5px;
+}

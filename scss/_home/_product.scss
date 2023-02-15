@@ -1,0 +1,78 @@
+@import "../_mix.scss";
+
+.product {
+	margin-bottom: 95px;
+}
+.product-base {
+	margin-bottom: 48px;
+}
+.product-title {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 36px;
+	color: #222222;
+	text-align: center;
+}
+.product-info {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #9f9f9f;
+	text-align: center;
+}
+
+.product-box {
+	display: flex;
+	flex-wrap: wrap;
+	@include nule-list(0, 0, none);
+	gap: 30px;
+	margin-bottom: 48px;
+}
+
+.product-card {
+	width: 360px;
+	background: #f8f8f8;
+}
+.product-card__info {
+	padding: 25px 28px;
+}
+.product-image {
+	height: 420px;
+}
+
+.product-name {
+	font-size: 13px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.product-describe {
+	font-size: 14px;
+	line-height: 17px;
+	color: #5d5d5d;
+	margin-bottom: 18px;
+}
+.product-price {
+	font-size: 13px;
+	line-height: 19px;
+	color: #f16d7f;
+	text-decoration: none;
+	padding: 5px;
+	border: 1px solid #f16d7f;
+	border-radius: 5px;
+}
+
+.product-browse {
+	display: flex;
+	justify-content: center;
+}
+
+.product-button {
+	font-size: 16px;
+	line-height: 19px;
+	color: #222222;
+	text-decoration: none;
+	display: block;
+	padding: 15px 40px;
+	outline: 1px #222222 solid;
+}

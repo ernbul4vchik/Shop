@@ -1,0 +1,58 @@
+@import "../_mix.scss";
+
+.categories {
+	color: #e5e5e5;
+	margin-bottom: 96px;
+}
+
+.categories-list {
+	@include nule-list(0, 0, none);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+	gap: 30px;
+
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:first-child {
+			width: 360px;
+			background-image: url("../source/images/cat_w.jpg");
+			min-height: 260px;
+		}
+		&:nth-child(2) {
+			width: 360px;
+			background-image: url("../source/images/cat_m.jpg");
+			min-height: 260px;
+		}
+		&:nth-child(3) {
+			width: 360px;
+			background-image: url("../source/images/cat_ch.jpg");
+			min-height: 260px;
+		}
+		&:last-child {
+			background-image: url("../source/images/cat_acs.png");
+			min-height: 180px;
+			width: 100%;
+		}
+	}
+}
+
+.categories-list__title {
+	width: 100%;
+	margin: 0;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	color: #f16d7f;
+
+	&::first-line {
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		color: #ffffff;
+	}
+}

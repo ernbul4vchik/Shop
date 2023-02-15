@@ -1,0 +1,13 @@
+/*Обнуление списков*/
+@mixin nule-list($pad: 0, $marg: 0, $list-type: none) {
+	padding: $pad;
+	margin: $marg;
+	list-style-type: $list-type;
+}
+
+/*Обнуление кнопки*/
+@mixin nule-btn($bg: none, $border: none, $cursor: pointer) {
+	background: $bg;
+	border: $border;
+	cursor: $cursor;
+}

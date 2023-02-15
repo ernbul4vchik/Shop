@@ -1,0 +1,28 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+}
+.wrap {
+	width: 1140px;
+	margin: 0px auto;
+}
+.main {
+	flex-grow: 1;
+}
+.project-btn__style:hover {
+	color: #e1e1e1;
+	background: #ef5b70;
+	border: none;
+	outline: none;
+}
