@@ -1,3 +1,4 @@
+@import "_mix.scss";
 .general-promo {
 	background: #f8f3f4;
 
@@ -8,4 +9,44 @@
 		color: #f16d7f;
 		padding: 60px 0px 60px 0px;
 	}
+}
+
+.general-promo__wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.general-promo__pag {
+	@include nule-list(0, 0, none);
+	display: flex;
+	align-items: center;
+	gap: 8px;
+
+	&-item {
+		&:first-child::after {
+			content: "/";
+			margin-left: 5px;
+			color: #636363;
+		}
+		&:nth-child(2)::after {
+			content: "/";
+			margin-left: 5px;
+			color: #636363;
+		}
+	}
+	&-link {
+		text-decoration: none;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+		color: #636363;
+	}
+}
+
+.general-promo__pag-purple {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #f16d7f;
 }

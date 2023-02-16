@@ -202,6 +202,10 @@ body {
   margin-bottom: 48px;
 }
 
+.product-box__catalog {
+  margin-top: 64px;
+}
+
 .product-card {
   width: 360px;
   background: #f8f8f8;
@@ -362,6 +366,8 @@ body {
   fill: #f16d7f;
 }
 
+/*Обнуление списков*/
+/*Обнуление кнопки*/
 .general-promo {
   background: #f8f3f4;
 }
@@ -371,6 +377,45 @@ body {
   line-height: 29px;
   color: #f16d7f;
   padding: 60px 0px 60px 0px;
+}
+
+.general-promo__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.general-promo__pag {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.general-promo__pag-item:first-child::after {
+  content: "/";
+  margin-left: 5px;
+  color: #636363;
+}
+.general-promo__pag-item:nth-child(2)::after {
+  content: "/";
+  margin-left: 5px;
+  color: #636363;
+}
+.general-promo__pag-link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+
+.general-promo__pag-purple {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
 }
 
 /*Обнуление списков*/
