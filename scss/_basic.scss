@@ -1,3 +1,4 @@
+@import "_mix.scss";
 * {
 	margin: 0;
 	padding: 0;
@@ -25,4 +26,8 @@ body {
 	background: #ef5b70;
 	border: none;
 	outline: none;
+}
+
+.nule-list {
+	@include nule-list(0, 0, none);
 }

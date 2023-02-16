@@ -13,13 +13,16 @@
 	display: flex;
 	gap: 18px;
 	align-items: center;
-}
-.header-button {
-	@include nule-btn(none, none, pointer);
-}
-.header-svg {
-	fill: #e8e8e8;
-}
-.header-svg:hover {
-	fill: #f16d7f;
+
+	&__svg {
+		fill: #e8e8e8;
+
+		&:hover {
+			fill: #f16d7f;
+		}
+	}
+
+	&__button {
+		@include nule-btn(none, none, pointer);
+	}
 }

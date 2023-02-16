@@ -1,0 +1,57 @@
+@import "../_mix.scss";
+.other {
+	margin: 96px 0px 128px 0px;
+	&-title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 167.2%;
+		color: #222224;
+	}
+}
+
+.other-catalog {
+	padding: 20px 70px 20px 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.other-catalog__item {
+	width: 220px;
+}
+.other-catalog__item-info {
+	padding: 8px 10px;
+}
+
+.other-catalog__item-name {
+	font-size: 14px;
+	line-height: 17px;
+	color: #5d5d5d;
+	margin-bottom: 13px;
+}
+.other-catalog__item-img {
+	width: 220px;
+	height: 250px;
+}
+
+.other-catalog {
+	margin-top: 18px;
+}
+
+.other-catalog__item-btn {
+	@include nule-btn(none, none, pointer);
+	outline: 1px solid #f16d7f;
+	padding: 10px 15px;
+	border-radius: 5px;
+	&:hover {
+		background: #f16d7f;
+	}
+	&:hover .other-catalog__item-svg {
+		fill: #ffff;
+	}
+}
+
+.other-catalog__item-svg {
+	fill: #f16d7f;
+}
