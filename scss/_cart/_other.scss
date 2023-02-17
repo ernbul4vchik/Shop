@@ -44,14 +44,9 @@
 	outline: 1px solid #f16d7f;
 	padding: 10px 15px;
 	border-radius: 5px;
+	color: #f16d7f;
 	&:hover {
 		background: #f16d7f;
+		color: #ffffff;
 	}
-	&:hover .other-catalog__item-svg {
-		fill: #ffff;
-	}
-}
-
-.other-catalog__item-svg {
-	fill: #f16d7f;
 }

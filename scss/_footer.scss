@@ -27,17 +27,13 @@
 		align-items: center;
 		background: #e1e1e1;
 		padding: 8px 9px;
+		width: 32px;
+		height: 32px;
+		color: #f16d7f;
 
 		&:hover {
 			background: #f16d7f;
+			color: #fff;
 		}
-
-		&:hover .footer-socials__svg {
-			fill: #e1e1e1;
-		}
-	}
-
-	&__svg {
-		fill: #f16d7f;
 	}
 }

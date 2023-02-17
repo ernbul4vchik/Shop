@@ -49,3 +49,16 @@
 		text-align: center;
 	}
 }
+
+.filter-box {
+	display: flex;
+	gap: 30px;
+}
+.filter {
+	width: 360px;
+}
+.filter-sort {
+	@include nule-list(0, 0, none);
+	display: flex;
+	gap: 30px;
+}

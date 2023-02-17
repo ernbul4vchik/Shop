@@ -75,6 +75,10 @@ body {
   cursor: pointer;
 }
 
+.header-logo {
+  text-decoration: none;
+}
+
 /*Promo settings*/
 .promo {
   background-color: #f1e4e6;
@@ -355,15 +359,13 @@ body {
   align-items: center;
   background: #e1e1e1;
   padding: 8px 9px;
+  width: 32px;
+  height: 32px;
+  color: #f16d7f;
 }
 .footer-socials__link:hover {
   background: #f16d7f;
-}
-.footer-socials__link:hover .footer-socials__svg {
-  fill: #e1e1e1;
-}
-.footer-socials__svg {
-  fill: #f16d7f;
+  color: #fff;
 }
 
 /*Обнуление списков*/
@@ -469,16 +471,11 @@ body {
   outline: 1px solid #f16d7f;
   padding: 10px 15px;
   border-radius: 5px;
+  color: #f16d7f;
 }
 .other-catalog__item-btn:hover {
   background: #f16d7f;
-}
-.other-catalog__item-btn:hover .other-catalog__item-svg {
-  fill: white;
-}
-
-.other-catalog__item-svg {
-  fill: #f16d7f;
+  color: #ffffff;
 }
 
 .empty-cat {
@@ -502,4 +499,21 @@ body {
   line-height: 17px;
   color: #9f9f9f;
   text-align: center;
+}
+
+.filter-box {
+  display: flex;
+  gap: 30px;
+}
+
+.filter {
+  width: 360px;
+}
+
+.filter-sort {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
 }
